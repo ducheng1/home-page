@@ -37,7 +37,7 @@ const menuItems = computed<NavigationMenuItem[]>(() => [
 </script>
 
 <template>
-  <UNavigationMenu :items="menuItems" :orientation />
+  <UNavigationMenu :items="menuItems" :orientation="orientation" variant="link" />
 </template>
 
 <style lang="scss" scoped></style>

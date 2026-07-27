@@ -1,5 +1,4 @@
 export default defineAppConfig({
-  title: '渡城电子日记',
   ui: {
     colors: {
       primary: 'teal',

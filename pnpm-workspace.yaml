@@ -33,6 +33,7 @@ catalog:
   husky: ^9.1.7
   nano-staged: ^1.0.2
   nuxt: ^4.5.0
+  nuxtseo-layer-devtools: ^5.3.6
   prettier: ^3.9.6
   tailwind-merge: ^3.6.0
   tailwindcss: ^4.3.3

@@ -17,7 +17,6 @@ definePageMeta({
 <template>
   <div>
     <Hero />
-    <div v-for="item of 100" :key="item">home</div>
   </div>
 </template>
 

@@ -26,7 +26,7 @@ const headerClass = computed(() => {
 
 <template>
   <UHeader
-    :title="appConfig.title"
+    :title="appConfig.nuxt.title"
     mode="slideover"
     :ui="{
       root: cn(headerClass, 'transition-all'),

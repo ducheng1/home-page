@@ -30,7 +30,7 @@
     "*.css": "tailwindcss"
   },
   "unocss.disable": true,
-  "tailwindCSS.classAttributes": ["class", "ui"],
+  "tailwindCSS.classAttributes": ["class", "ui", "active-class", "inactive-class"],
   "tailwindCSS.classFunctions": ["defineAppConfig", "cn"],
   "search.exclude": {
     "**/dist": true,
@@ -51,5 +51,8 @@
     ".gitignore": ".gitconfig, .gitattributes",
     "eslint.config.js": ".prettierrc, .prettierignore",
     "README.md": "LICENSE"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   }
 }

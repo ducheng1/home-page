@@ -1,7 +1,24 @@
+const SITE_TITLE = '渡城电子日记'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  appId: 'home-page',
   compatibilityDate: '2026-06-30',
   ssr: false,
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'zh-CN',
+      },
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    },
+    pageTransition: true,
+  },
+  appConfig: {
+    nuxt: {
+      title: SITE_TITLE,
+    },
+  },
   devtools: {
     enabled: true,
   },
@@ -17,14 +34,7 @@ export default defineNuxtConfig({
     },
   ],
   pages: { pattern: ['**/*.vue', '!**/components/**/*.vue'] },
-  app: {
-    head: {
-      htmlAttrs: {
-        lang: 'zh-CN',
-      },
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    },
-  },
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui',
@@ -33,6 +43,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/seo',
   ],
+
   fonts: {
     providers: {
       google: false,
@@ -52,5 +63,16 @@ export default defineNuxtConfig({
     config: {
       standalone: false,
     },
+  },
+  // seo配置
+  site: {
+    name: SITE_TITLE,
+    url: 'https://dcwedu.top',
+  },
+  ogImage: {
+    enabled: false,
+  },
+  robots: {
+    allow: '/',
   },
 })

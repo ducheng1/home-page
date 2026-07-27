@@ -49,6 +49,7 @@
     "eslint-plugin-prettier": "catalog:",
     "husky": "catalog:",
     "nano-staged": "catalog:",
+    "nuxtseo-layer-devtools": "catalog:",
     "prettier": "catalog:",
     "tailwind-merge": "catalog:",
     "typescript": "catalog:",
