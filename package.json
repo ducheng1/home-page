@@ -1,0 +1,61 @@
+{
+  "name": "home-page",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A personal homepage built with Nuxt.js",
+  "author": "ducheng1<w729567588@163.com>",
+  "license": "MIT",
+  "repository": "https://github.com/ducheng1/home-page",
+  "bugs": "https://github.com/ducheng1/home-page/issues",
+  "engines": {
+    "node": "^24"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint . --fix --cache --cache-location node_modules/.cache/.eslintcache/",
+    "format": "prettier **/*.{md,json,yaml} --write --cache",
+    "typecheck": "nuxt typecheck",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky",
+    "up": "pnpx taze minor -wIr",
+    "commit": "git add . && czg"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "catalog:",
+    "@nuxt/ui": "catalog:",
+    "nuxt": "catalog:",
+    "tailwindcss": "catalog:"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "@commitlint/cli": "catalog:",
+    "@commitlint/config-conventional": "catalog:",
+    "@nuxt/eslint": "catalog:",
+    "cz-git": "catalog:",
+    "czg": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "eslint-plugin-prettier": "catalog:",
+    "husky": "catalog:",
+    "nano-staged": "catalog:",
+    "prettier": "catalog:",
+    "typescript": "catalog:",
+    "vue-tsc": "catalog:"
+  },
+  "nano-staged": {
+    "*": [
+      "eslint --fix"
+    ]
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.17.0",
+      "onFail": "download"
+    }
+  }
+}

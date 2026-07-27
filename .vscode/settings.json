@@ -1,0 +1,46 @@
+{
+  "npm.packageManager": "pnpm",
+  "js/ts.tsdk.path": "node_modules/typescript/lib",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "prettier.enable": false,
+  "css.validate": false,
+  "scss.validate": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "css",
+    "tailwindcss"
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "unocss.disable": true,
+  "tailwindCSS.classAttributes": ["class", "ui"],
+  "tailwindCSS.classFunctions": ["defineAppConfig"],
+  "search.exclude": {
+    "**/dist": true,
+    "**/node_modules": true,
+    "pnpm-lock.yaml": true,
+    "**/generated": true
+  },
+  "files.readonlyInclude": {
+    "**/dist": true,
+    "**/node_modules": true,
+    "pnpm-lock.yaml": true
+  }
+}
