@@ -26,15 +26,22 @@
   },
   "dependencies": {
     "@iconify-json/lucide": "catalog:",
+    "@nuxt/image": "catalog:",
     "@nuxt/ui": "catalog:",
+    "@nuxtjs/seo": "catalog:",
+    "gsap": "catalog:",
     "nuxt": "catalog:",
-    "tailwindcss": "catalog:"
+    "tailwindcss": "catalog:",
+    "tw-animate-css": "catalog:"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:",
     "@commitlint/cli": "catalog:",
     "@commitlint/config-conventional": "catalog:",
     "@nuxt/eslint": "catalog:",
+    "@vueuse/core": "catalog:",
+    "@vueuse/nuxt": "catalog:",
+    "clsx": "catalog:",
     "cz-git": "catalog:",
     "czg": "catalog:",
     "eslint": "catalog:",
@@ -43,6 +50,7 @@
     "husky": "catalog:",
     "nano-staged": "catalog:",
     "prettier": "catalog:",
+    "tailwind-merge": "catalog:",
     "typescript": "catalog:",
     "vue-tsc": "catalog:"
   },

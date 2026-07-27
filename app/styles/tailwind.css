@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import '@nuxt/ui';
+
+@theme inline {
+  --font-sans: 'MiSans', sans-serif;
+  --spacing-header: var(--ui-header-height);
+  --spacing-body: calc(100vh - var(--spacing-header) - 2rem);
+}
+
+@layer base {
+  html {
+    @apply w-full min-h-full;
+  }
+}
+
+@utility flex-c {
+  @apply flex items-center justify-center;
+}
+
+@utility flex-bc {
+  @apply flex items-center justify-between;
+}
+
+@utility flex-col-c {
+  @apply flex-c flex-col;
+}
+
+@utility flex-col-bc {
+  @apply flex-bc flex-col;
+}

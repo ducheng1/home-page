@@ -8,6 +8,9 @@ export default withNuxt(
     {
       vue: true,
       typescript: true,
+      rules: {
+        'antfu/if-newline': 'off',
+      },
     },
     pluginPrettier,
   ),

@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from '@nuxt/ui'
+import type { NavigationMenuItem, NavigationMenuProps } from '@nuxt/ui'
+
+defineProps<{
+  orientation?: NavigationMenuProps['orientation']
+}>()
 
 const route = useRoute()
 
@@ -33,7 +37,7 @@ const menuItems = computed<NavigationMenuItem[]>(() => [
 </script>
 
 <template>
-  <UNavigationMenu :items="menuItems" />
+  <UNavigationMenu :items="menuItems" :orientation />
 </template>
 
 <style lang="scss" scoped></style>

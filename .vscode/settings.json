@@ -31,7 +31,7 @@
   },
   "unocss.disable": true,
   "tailwindCSS.classAttributes": ["class", "ui"],
-  "tailwindCSS.classFunctions": ["defineAppConfig"],
+  "tailwindCSS.classFunctions": ["defineAppConfig", "cn"],
   "search.exclude": {
     "**/dist": true,
     "**/node_modules": true,
@@ -42,5 +42,14 @@
     "**/dist": true,
     "**/node_modules": true,
     "pnpm-lock.yaml": true
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": true,
+  "explorer.fileNesting.patterns": {
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "pnpm-lock.yaml, pnpm-workspace.yaml, .browserslistrc, .node-version",
+    ".gitignore": ".gitconfig, .gitattributes",
+    "eslint.config.js": ".prettierrc, .prettierignore",
+    "README.md": "LICENSE"
   }
 }

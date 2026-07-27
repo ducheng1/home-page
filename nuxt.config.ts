@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { prerender: true },
   },
-  css: ['~/styles/index.css'],
+  css: ['~/styles/tailwind.css'],
   components: [
     {
       path: '~/components',
@@ -16,6 +16,7 @@ export default defineNuxtConfig({
       global: true,
     },
   ],
+  pages: { pattern: ['**/*.vue', '!**/components/**/*.vue'] },
   app: {
     head: {
       htmlAttrs: {
@@ -24,7 +25,14 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
-  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxt/fonts'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/ui',
+    '@nuxt/fonts',
+    '@nuxt/image',
+    '@vueuse/nuxt',
+    '@nuxtjs/seo',
+  ],
   fonts: {
     providers: {
       google: false,
